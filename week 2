@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+void calculate_coffee(double prince, double quantity) {
+    double subtotal = prince * quantity;
+    double tax = subtotal * 0.0825;
+    double total = subtotal + tax;
+    cout << "Subtotal:" << subtotal << endl;
+    cout << "Tax:" << tax << endl;
+    cout << "Total:" << total << endl;
+}
+
+int main() {
+    double price, quantity;
+
+    cout<< "Enter price per coffee($):";
+    cin >> price;
+
+    cout<< "Enter quantity:";
+    cin >> quantity;
+
+    calculate_coffee(price, quantity);
+    return 0;
+}
